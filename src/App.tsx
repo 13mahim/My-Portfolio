@@ -68,7 +68,7 @@ export default function App() {
       github: "https://github.com/13mahim/SkillBridge.git",
       live: "https://frontend-eta-five-90.vercel.app",
       tags: ["Full Stack", "React", "Collaboration"],
-      image: "/src/skilbrige.jpeg"
+      image: "/skilbrige.jpeg"
     },
     {
       title: "Planora — Event Management Platform",
@@ -76,7 +76,7 @@ export default function App() {
       github: "https://github.com/13mahim/Planora-NEW.git",
       live: "https://planora-new-frontend.vercel.app",
       tags: ["Full Stack", "Express", "Node.js"],
-      image: "/src/planora.png"
+      image: "/planora.png"
     }
   ];
 
@@ -119,7 +119,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border border-purple-500/30 glow-border">
               <img 
-                src="/src/my%20pic.png" 
+                src="/my-pic.png" 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -199,7 +199,7 @@ export default function App() {
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 blur-3xl" />
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border-2 border-white/10 glow-border">
               <img 
-                src="/src/my%20pic.png" 
+                src="/my-pic.png" 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
                 onError={(e) => {
