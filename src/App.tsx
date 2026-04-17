@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "motion/react";
-import myPic from "/public/my-pic.png";
-import skilbrigeImg from "/public/skilbrige.jpeg";
-import planoraImg from "/public/planora.png";
+import myPic from "./assets/my-pic.png";
+import skilbrigeImg from "./assets/skilbrige.jpeg";
+import planoraImg from "./assets/planora.png";
 import { 
   Mail, 
   Phone, 
