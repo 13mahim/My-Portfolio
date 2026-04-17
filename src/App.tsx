@@ -174,7 +174,9 @@ export default function App() {
             
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <a 
-                href="mailto:fahad13mahim@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&to=fahad13mahim@gmail.com&su=Hello%20Fahad"
+                target="_blank"
+                rel="noreferrer"
                 className="px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-all shadow-[0_0_20px_rgba(168,85,247,0.4)] flex items-center gap-2"
               >
                 <Mail size={18} /> Contact Me
