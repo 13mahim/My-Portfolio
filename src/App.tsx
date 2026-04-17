@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "motion/react";
+import myPic from "/public/my-pic.png";
+import skilbrigeImg from "/public/skilbrige.jpeg";
+import planoraImg from "/public/planora.png";
 import { 
   Mail, 
   Phone, 
@@ -68,7 +71,7 @@ export default function App() {
       github: "https://github.com/13mahim/SkillBridge.git",
       live: "https://frontend-eta-five-90.vercel.app",
       tags: ["Full Stack", "React", "Collaboration"],
-      image: "/skilbrige.jpeg"
+      image: skilbrigeImg
     },
     {
       title: "Planora — Event Management Platform",
@@ -76,7 +79,7 @@ export default function App() {
       github: "https://github.com/13mahim/Planora-NEW.git",
       live: "https://planora-new-frontend.vercel.app",
       tags: ["Full Stack", "Express", "Node.js"],
-      image: "/planora.png"
+      image: planoraImg
     }
   ];
 
@@ -119,7 +122,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border border-purple-500/30 glow-border">
               <img 
-                src="/my-pic.png" 
+                src={myPic} 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -199,7 +202,7 @@ export default function App() {
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 blur-3xl" />
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border-2 border-white/10 glow-border">
               <img 
-                src="/my-pic.png" 
+                src={myPic} 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
                 onError={(e) => {
