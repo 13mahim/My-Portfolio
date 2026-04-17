@@ -125,9 +125,6 @@ export default function App() {
                 src={myPic} 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover"
-                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-                  e.currentTarget.src = "https://picsum.photos/seed/developer/100/100";
-                }}
               />
             </div>
             <div className="font-display font-bold text-xl bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hidden sm:block">
@@ -205,9 +202,6 @@ export default function App() {
                 src={myPic} 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
-                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-                  e.currentTarget.src = "https://picsum.photos/seed/developer/800/1000";
-                }}
               />
             </div>
           </motion.div>
@@ -225,9 +219,6 @@ export default function App() {
                       src={project.image} 
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
                     />
                   ) : (
                     <div className="absolute inset-0 bg-linear-to-br from-purple-500/10 to-blue-500/10" />
