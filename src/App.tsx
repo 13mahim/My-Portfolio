@@ -60,8 +60,8 @@ const Card = ({ children, className = "" }: CardProps) => (
 
 export default function App() {
   const skills = [
-    "HTML", "CSS", "JavaScript (JS)", "React.js", "Next.js", 
-    "Node.js/Express", "PHP (Laravel)", "SQL (PostgreSQL)", "Docker", "GitHub"
+    "HTML", "CSS", "JavaScript (JS)", "TypeScript", "React.js", "Next.js", 
+    "Node.js/Express", "PHP (Laravel)", "SQL (PostgreSQL)", "Prisma", "Docker", "GitHub", "Figma"
   ];
 
   const projects = [
