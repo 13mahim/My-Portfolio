@@ -7,8 +7,8 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Github, 
-  Linkedin, 
+  Github as GithubIcon, 
+  Linkedin as LinkedinIcon, 
   ExternalLink, 
   GraduationCap, 
   Calendar,
@@ -34,10 +34,10 @@ const SectionHeader = ({ title, icon: Icon }: SectionHeaderProps) => (
     <div className="p-3 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400">
       <Icon size={24} />
     </div>
-    <h2 className="text-3xl font-display font-bold tracking-tight bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+    <h2 className="text-3xl font-display font-bold tracking-tight bg-linear-to-r from-white to-gray-500 bg-clip-text text-transparent">
       {title}
     </h2>
-    <div className="h-[1px] flex-1 bg-gradient-to-r from-purple-500/50 to-transparent ml-4" />
+    <div className="h-px flex-1 bg-linear-to-r from-purple-500/50 to-transparent ml-4" />
   </motion.div>
 );
 
@@ -125,12 +125,12 @@ export default function App() {
                 src={myPic} 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://picsum.photos/seed/developer/100/100";
+                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
+                  e.currentTarget.src = "https://picsum.photos/seed/developer/100/100";
                 }}
               />
             </div>
-            <div className="font-display font-bold text-xl bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hidden sm:block">
+            <div className="font-display font-bold text-xl bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hidden sm:block">
               FH
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function App() {
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-bold mb-8 leading-[0.9] tracking-tight">
               MD. <br className="hidden lg:block" />
-              <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 FAHAD HASAN
               </span>
             </h1>
@@ -184,10 +184,10 @@ export default function App() {
               </a>
               <div className="flex items-center gap-4 px-4">
                 <a href="https://github.com/13mahim" target="_blank" className="p-3 rounded-full border border-white/10 hover:border-purple-500/50 text-gray-400 hover:text-purple-400 transition-all">
-                  <Github size={20} />
+                  <GithubIcon size={20} />
                 </a>
                 <a href="https://www.linkedin.com/in/fahad-hasan-489aa7193" target="_blank" className="p-3 rounded-full border border-white/10 hover:border-purple-500/50 text-gray-400 hover:text-purple-400 transition-all">
-                  <Linkedin size={20} />
+                  <LinkedinIcon size={20} />
                 </a>
               </div>
             </div>
@@ -199,14 +199,14 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="relative w-full max-w-[300px] md:max-w-[400px] lg:max-w-none mx-auto lg:mx-0"
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 blur-3xl" />
-            <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border-2 border-white/10 glow-border">
+            <div className="absolute inset-0 bg-linear-to-tr from-purple-500/20 to-blue-500/20 blur-3xl" />
+            <div className="relative aspect-4/5 rounded-4xl overflow-hidden border-2 border-white/10 glow-border">
               <img 
                 src={myPic} 
                 alt="MD. FAHAD HASAN"
                 className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://picsum.photos/seed/developer/800/1000";
+                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
+                  e.currentTarget.src = "https://picsum.photos/seed/developer/800/1000";
                 }}
               />
             </div>
@@ -225,14 +225,14 @@ export default function App() {
                       src={project.image} 
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
+                      onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
+                        e.currentTarget.style.display = 'none';
                       }}
                     />
                   ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10" />
+                    <div className="absolute inset-0 bg-linear-to-br from-purple-500/10 to-blue-500/10" />
                   )}
-                  <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-gray-950 to-transparent">
+                  <div className="absolute inset-x-0 bottom-0 p-6 bg-linear-to-t from-gray-950 to-transparent">
                     <div className="flex gap-2">
                       {project.tags.map(tag => (
                         <span key={tag} className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded bg-white/10 text-white/70">
@@ -254,7 +254,7 @@ export default function App() {
                     target="_blank" 
                     className="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white transition-colors"
                   >
-                    <Github size={16} /> GitHub
+                    <GithubIcon size={16} /> GitHub
                   </a>
                   <a 
                     href={project.live} 
