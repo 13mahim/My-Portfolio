@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import myPic from "./assets/my-pic.png";
+import myPic from "./assets/my-new-pic.png";
 import skilbrigeImg from "./assets/skilbrige.jpeg";
 import planoraImg from "./assets/planora.png";
 import { 
