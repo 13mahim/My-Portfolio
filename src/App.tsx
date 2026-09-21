@@ -87,8 +87,9 @@ export default function App() {
     {
       degree: "B.Sc (Hon's) at department of chemistry",
       institution: "Government B.L college, Khulna",
-      meta: "Running 4th Year | Duration: 4 Years",
-      major: "Chemistry"
+      meta: "Passing Year: 2024 | Duration: 4 Years",
+      major: "Chemistry",
+      result: "2nd Class"
     },
     {
       degree: "Higher Secondary Certificate (H.S.C)",
@@ -185,7 +186,7 @@ export default function App() {
                 <a href="https://github.com/13mahim" target="_blank" className="p-3 rounded-full border border-white/10 hover:border-purple-500/50 text-gray-400 hover:text-purple-400 transition-all">
                   <GithubIcon size={20} />
                 </a>
-                <a href="https://www.linkedin.com/in/fahad-hasan-489aa7193" target="_blank" className="p-3 rounded-full border border-white/10 hover:border-purple-500/50 text-gray-400 hover:text-purple-400 transition-all">
+                <a href="https://www.linkedin.com/in/md-fahad-hasan-489aa7193" target="_blank" className="p-3 rounded-full border border-white/10 hover:border-purple-500/50 text-gray-400 hover:text-purple-400 transition-all">
                   <LinkedinIcon size={20} />
                 </a>
               </div>
